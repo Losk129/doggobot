@@ -4,7 +4,7 @@ import requests
 import re
 
 def get_url():
-    contents = requests.get('https://random.dog/woof.json').json()
+    contents = requests.get('https://api.waifu.im/sfw/waifu').json()
     url = contents['url']
     return url
 
